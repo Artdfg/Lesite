@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Mon Agence</title>
+        <link rel="stylesheet" href="Contact.css"></linkrel>
+    </head>
+
+    <body>
+        <h1>Contact </h1>
+        <form action="Demandes.html" method="GET">
+        <fieldset>
+            <legend>Infos</legend>
+                Civilité : <br>
+                <input type="radio" name="sexe" value="homme" checked> Homme
+                <input type="radio" name="sexe" value="femme" checked> Femme <br>
+                Nom : <br>
+                <input type="text" name="Nom" autocomplete="on"> <br>
+                Prénom : <br>
+                <input type="text" name="Prenom" autocomplete="on"> <br>
+                Mail : <br>
+                <input type="email" name="Mail" autocomplete="on"> <br>
+                Tél : <br>
+                <input type="tel" name="Tel" autocomplete="on"> <br>
+        </fieldset> <br>
+        <fieldset>
+            <legend>Ma Demande</legend>
+                Demande : <br>
+                <input type="text" name="Demande"> <br> <br>
+        </fieldset> <br>
+        <div id="Boutons">
+        <input type="submit" value="Submit">
+        </div>
+        </form> <br>
+
+        <div id="logo">
+                <a href="mailto:Lesite@gmail.com?subject=Renseignement">Contactez-nous !
+                    <img src="../images/mail.png" width="25" height="25" class="alignement">
+
+                </a>
+                <a href="tel:0123456789">Appelez-nouuuuus!!
+                    <img src="../images/tel.png" width="25" height="25" class="alignement">
+                </a> <br><br>
+        </div>
+
+        <h1>A propos :</h1>
+        <h2>Qui sommes nous ?</h2>
+        <p>Nous sommes 2 personnes en cours de HTML et truc qui suivent</p>
+
+        <nav>
+            <a href="../HTML/Accueil.html">Accueil</a>
+            <a href="../HTML/Réservation.html" >Réservation</a>
+            <a href="../HTML/Contact.html" class="active">Contact et A propos</a>
+        </nav>
+    </body>
