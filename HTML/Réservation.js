@@ -6,6 +6,8 @@ var date_départ = Int8Array;
 var date_retour = Int8Array;
 var nombre_adultes = Int8Array;
 var nombre_enfants = Int8Array;
+var Dj = Boolean;
+
 
 
 
@@ -18,8 +20,13 @@ function getinfo(){
     date_retour = document.getElementById("date_retour").value;
     nombre_adultes = document.getElementById("nombre_adultes").value;
     nombre_enfants = document.getElementById("nombre_enfants").value;
-    console.log (Nom);
+    Dj = document.forms["form"]["Dj"].value;
+    console.log (Dj);
+    T=[Nom,Prénom,Mail,Tel,date_départ,date_retour,nombre_adultes,nombre_enfants,Dj];
+    return T; 
 }
+
+
 
 
 

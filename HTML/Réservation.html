@@ -9,7 +9,7 @@
 
     <body onload="getinfo()">
         <h1> Réservation</h1>
-        <form action="Data.html" method="GET" onchange="getinfo()">
+        <form name="form" action="Data.html" method="GET" onchange="getinfo()">
             <fieldset>
                 <legend>Infos</legend>
                     Nom : <br>
@@ -50,8 +50,8 @@
                         <option value="8">8</option>
                     </select> <br>
                     Petit-déjeuner : <br>
-                    <input type="radio" name="Dj" value="Oui" checked> Oui
-                    <input type="radio" name="Dj" value="Non" checked> Non <br>
+                    <input type="radio" name="Dj" value="1" checked id=Dj> Oui
+                    <input type="radio" name="Dj" value="0" checked id=Dj> Non <br>
             </fieldset>
             <fieldset>
                 <legend>Autres ?</legend>
