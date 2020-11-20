@@ -1,0 +1,34 @@
+h1 {
+    color: orange;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 350%;
+    text-align: center;
+    text-shadow: 0.1em 0.1em 0.2em orange;
+}
+
+body {    
+    background: linear-gradient(rgba(0, 225, 255, 0.26), white);
+  }
+
+.ImageB {
+    margin-top: 150px;
+    margin-left: auto;
+}
+Text p {
+    padding-top: 500px;
+}
+nav a {
+    float : left;
+    background-color:rgba(51, 51, 51, 0.767);
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+nav a:hover {
+    background-color: orange;
+}
+
+.active {
+    background-color: darkorange;
+}
