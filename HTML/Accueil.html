@@ -1,13 +1,13 @@
 <!DOCTYPE html>
     <html lang="fr">
     <head>
-        
         <meta charset="UTF-8">
         <title>Mon Agence</title>
         <link rel="stylesheet" href="Accueil.css"></linkrel>
+
     </head>
 
-    <body onload="AcceuilJs()">
+    <body onload="Onload()">
         <div class="linear-gradient"></div>
         <h1>Le Site</h1>
         <div class="ImageB">
@@ -17,12 +17,14 @@
         <p>Listes des Destinations :</p>
         <template id="Destinations">
             <span>
-                {{image}}</br>
+                <img src="{{image}}" width="200" height="154" alt="La Clus'"></br>
                 {{description}}</br>
                 {{prix}}</br>
-
             </span>
         </template>
+        <div id="Tab">
+
+        </div>
     <!--<h2>La Clusaz</h2>
         <p><img src="../images/IM1.jpg" width="200" height="154" alt="La Clus'" ></p>
         <p id="Destinations">
