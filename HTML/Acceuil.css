@@ -32,3 +32,22 @@ nav a:hover {
 .active {
     background-color: darkorange;
 }
+
+table {
+    border-spacing: 5px;
+}
+
+table, th, td {
+    border: 1px solid darkorange;
+    border-collapse: collapse;
+  }
+th, td {
+    padding: 15px;
+}
+
+th {
+    background-color: darkorange;
+}
+#Breserver {
+    color: red;
+}

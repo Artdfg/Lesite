@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <script src='Réservation.js'></script>
+        <meta charset="UTF-8">
+        <title>Mon Agence</title>
+        <link rel="stylesheet" href="RéservationStTrop.css"></linkrel>
+    </head>
+
+    <body onload="getinfo()">
+        <h1> Réservation St Tropez</h1>
+        <form name="form" action="Data.html" method="GET" onchange="getinfo()">
+            <fieldset>
+                <legend>Infos</legend>
+                    Nom : <br>
+                    <input type="text" name="Nom" id="Nom" autocomplete="on"> <br>
+                    Prénom : <br>
+                    <input type="text" name="Prenom" id="Prenom" autocomplete="on"> <br>
+                    Mail : <br>
+                    <input type="email" name="Mail" id="Mail" autocomplete="on"> <br>
+                    Tél : <br>
+                    <input type="tel" name="Tel" id="Tel" autocomplete="on"> <br>
+            </fieldset>
+            <fieldset>
+                <legend>Détails</legend>
+                    Date Départ :<br>
+                    <input type="date" name="Date_de_depart" id="date_depart"> <br>
+                    Date Retour :<br>
+                    <input type="date" name="Date_de_retour" id="date_retour"> <br>
+                    Nombre adultes : <br>
+                    <select name="Nombre_adultes" id="Nombre_adultes">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select> <br>
+                    Nombre d'enfants (-12ans) : <br>
+                    <select name="Nombre_enfants" id="Nombre_enfants">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select> <br>
+                    Petit-déjeuner : <br>
+                    <input type="radio" name="Dj" value="1" checked id=Dj> Oui
+                    <input type="radio" name="Dj" value="0" checked id=Dj> Non <br>
+            </fieldset>
+            <fieldset>
+                <legend>Autres ?</legend>
+                    Demande de renseignements :
+                    <Zonetxt>
+                    <input type="text" name="Demande"> 
+                    </Zonetxt> <br>
+            </fieldset> <br> <br>
+
+                    Prix : <br> <br>
+                    <Boutons>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset"> <br>
+                    </Boutons>
+
+                    <nav>
+                        <a href="../HTML/Accueil.html">Accueil</a>
+                        <a href="../HTML/Réservation.html" class="active">Réservation</a>
+                        <a href="../HTML/Contact.html">Contact et A propos</a>
+                    </nav>
+
+
+
+    </body>

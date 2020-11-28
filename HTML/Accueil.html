@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Mon Agence</title>
-        <link rel="stylesheet" href="Accueil.css"></linkrel>
+        <link rel="stylesheet" href="Acceuil.css"></linkrel>
 
     </head>
 
@@ -11,19 +11,28 @@
         <div class="linear-gradient"></div>
         <h1>Le Site</h1>
         <div class="ImageB">
-             <img src="../Images/T2.jpg" alt="zz">
+             <img src="../images/T2.jpg">
         </div> 
         <div id="Text">
         <p>Listes des Destinations :</p>
         <template id="Destinations">
             <span>
-                <img src="{{image}}" width="200" height="154" alt="La Clus'"></br>
-                {{description}}</br>
-                {{prix}}</br>
+                <table style="width:100%">
+                    <tr>
+                        <th >{{nom}}</th>
+                        <th>{{pays}}</th>
+                        <th colspan="2">{{prix}}</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><img src="{{image}}" width="200" height="154"></td>
+                        <td rowspan="2" colspan="2">{{description}}</td>
+                        <td><button type="button" onclick="self.location.href='../HTML/{{lien}}.html'">Réserver</button></td>
+                    </tr>
+                        
+                </table>
             </span>
         </template>
         <div id="Tab">
-
         </div>
     <!--<h2>La Clusaz</h2>
         <p><img src="../images/IM1.jpg" width="200" height="154" alt="La Clus'" ></p>
