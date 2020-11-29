@@ -3,11 +3,67 @@
     <head>
         <script src='Data.js'></script>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="Data.css"></linkrel>
         <title>Mon Agence</title>
     </head>
 
     <body onload="info()">
-        <p>YOO A +</p>
+
+        <template id="Recap">
+            <span>
+                <table>
+                    <caption>Récapitulatif de votre réservation</caption>
+                    <tr>
+                        <th>Destination</th>
+                        <td>{{Destination}}</td>
+                    </tr>
+                    <tr>
+                        <th >Nom</th>
+                        <td>{{Nom}}</td>
+                    </tr>
+                    <tr>
+                        <th >Prénom</th>
+                        <td>{{Prenom}}</td>
+                    </tr>
+                    <tr>
+                        <th >Mail</th>
+                        <td>{{Mail}}</td>
+                    </tr>
+                    <tr>
+                        <th >Teléphone</th>
+                        <td>{{Tel}}</td>
+                    </tr>
+                    <tr>
+                        <th >Date de depart</th>
+                        <td>{{date_depart}}</td>
+                    </tr>
+                    <tr>
+                        <th >Date de retour</th>
+                        <td>{{date_retour}}</td>
+                    </tr>
+                    <tr>
+                        <th >Nombre d'adultes</th>
+                        <td>{{nombre_adultes}}</td>
+                    </tr>
+                    <tr>
+                        <th >Nombre d'enfants</th>
+                        <td>{{nombre_enfants}}</td>
+                    </tr>
+                    <tr>
+                        <th >petit déjeuner</th>
+                        <td>{{Dj}}</td>
+                    </tr>    
+                </table>
+            </span>
+        </template>
+        <div id="Tab">
+        </div>
+        <br>
+        <Boutons>
+            <button type="button" onclick="self.location.href=retour()">Modifier</button>
+            <button type="button" onclick="self.location.href=retour()">Valider</button>
+             <br>
+        </Boutons>
         <nav>
             <a href="../HTML/Accueil.html">Accueil</a>
             <a href="../HTML/Contact.html">Contact et A propos</a>

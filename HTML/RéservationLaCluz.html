@@ -8,6 +8,7 @@
     </head>
 
     <body onload="getinfo()">
+        
         <h1> Réservation La Clusaz</h1>
         <form name="form" action="Data.html" method="GET" onchange="getinfo()">
             <fieldset>
@@ -20,6 +21,7 @@
                     <input type="email" name="Mail" id="Mail" autocomplete="on"> <br>
                     Tél : <br>
                     <input type="tel" name="Tel" id="Tel" autocomplete="on"> <br>
+                    <input type="hidden" name="Destination" id="Destination" value="La Clusaz">
             </fieldset>
             <fieldset>
                 <legend>Détails</legend>
