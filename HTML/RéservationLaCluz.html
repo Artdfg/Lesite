@@ -5,13 +5,13 @@
         <meta charset="UTF-8">
         <title>Mon Agence</title>
         <link rel="stylesheet" href="RéservationLaCluz.css"></linkrel>
-        
+
     </head>
 
-    <body onload="getinfo()">
+    <body onload="prix()">
         
         <h1> Réservation La Clusaz</h1>
-        <form name="form" action="Data.html" method="GET" onchange="getinfo()">
+        <form name="form" action="Data.html" method="GET" onchange="prix()">
             <fieldset>
                 <legend>Infos</legend>
                     Nom : <br>
@@ -32,6 +32,7 @@
                     <input type="date" name="Date_de_retour" id="date_retour"> <br>
                     Nombre adultes : <br>
                     <select name="Nombre_adultes" id="Nombre_adultes">
+                        <option value="0">0</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -43,6 +44,7 @@
                     </select> <br>
                     Nombre d'enfants (-12ans) : <br>
                     <select name="Nombre_enfants" id="Nombre_enfants">
+                        <option value="0">0</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -53,8 +55,7 @@
                         <option value="8">8</option>
                     </select> <br>
                     Petit-déjeuner : <br>
-                    <input type="radio" name="Dj" value="1" checked id=Dj> Oui
-                    <input type="radio" name="Dj" value="0" checked id=Dj> Non <br>
+                    <input type="checkbox" name="Dj" value="1" aria-checked="false" id=Dj> Oui <br>
             </fieldset>
             <fieldset>
                 <legend>Autres ?</legend>
@@ -62,11 +63,15 @@
                     <Zonetxt>
                     <input type="text" name="Demande"> 
                     </Zonetxt> <br>
-            </fieldset> <br> <br>
+            </fieldset> 
+            <fieldset>
+                <legend>Prix</legend>
+                    <b id="pr"></b>
+            </fieldset><br> <br>
 
-                    Prix : <br> <br>
+                    
                     <Boutons>
-                    <input type="submit" value="Submit">
+                    <input type="button" value="Submit" onclick="validateForm()">
                     <input type="reset" value="Reset"> <br>
                     </Boutons>
 
@@ -77,5 +82,7 @@
                     </nav>
 
 
-
+                    <!--<form onsubmit="validateForm()" method="post">Name: <input type="text" name="fname"><input type="submit" value="Submit"> -->
     </body>
+    <script src='Réservation.js'></script>
+

@@ -24,9 +24,10 @@ function info(){
     date_retour: new URLSearchParams(window.location.search).get("Date_de_retour"),
     nombre_adultes: new URLSearchParams(window.location.search).get("Nombre_adultes"),
     nombre_enfants: new URLSearchParams(window.location.search).get("Nombre_enfants"),
+    Prix: new URLSearchParams(window.location.search).get("pr"),
     Dj: convert()}];
     
-    
+    var Prix = sessionStorage.getItem('sPrix');
 
     let template = document.querySelector("#Recap");
     let Tab = document.querySelector("#Tab");
@@ -44,7 +45,8 @@ function info(){
             .replace(/{{date_retour}}/g, d.date_retour)
             .replace(/{{nombre_adultes}}/g, d.nombre_adultes)
             .replace(/{{nombre_enfants}}/g, d.nombre_enfants)
-            .replace(/{{Dj}}/g, d.Dj);
+            .replace(/{{Dj}}/g, d.Dj)
+            .replace(/{{Prix}}/g, Prix);
         clone.firstElementChild.innerHTML = newContent
         Tab.appendChild(clone);
     }
