@@ -24,7 +24,12 @@
                         <th colspan="2">{{prix}}</th>
                     </tr>
                     <tr>
-                        <td rowspan="2"><img src="{{image}}" width="200" height="154"></td>
+                        <td rowspan="2">
+                            <img src="{{image}}" width="200" height="154">
+                            <div class="display">
+                                <p class="temp"></p>
+                            </div>
+                        </td>
                         <td rowspan="2" colspan="2">{{description}}</td>
                         <td><button type="button" onclick="self.location.href='../HTML/{{lien}}.html'">Réserver</button></td>
                     </tr>    
@@ -52,4 +57,5 @@
         </nav>
     </body>
     <script src='Acceuil.js'></script>
+    <script src='Meteo.js'></script>
 </html>
