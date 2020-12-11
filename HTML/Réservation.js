@@ -33,6 +33,12 @@ function prix(){
         }
         else {Prix = 0}
     }
+    if (Destination == "Rome"){
+        if (!isNaN(date_retour.valueAsNumber) && !isNaN(date_depart.valueAsNumber)) {
+            Prix = (70*nombre_adultes+28*nombre_enfants+12*(nombre_adultes)*vDj+12*(nombre_enfants)*vDj)*(date_retour.valueAsNumber-date_depart.valueAsNumber)/86400000
+        }
+        else {Prix = 0}
+    }
     gPrix = Prix;
     gnombre_adultes = nombre_adultes;
     gdate_depart = date_depart.valueAsNumber;

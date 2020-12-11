@@ -5,7 +5,9 @@ h1 {
     text-align: center;
     text-shadow: 0.1em 0.1em 0.2em orange;
 }
-
+.Connec {
+    text-align: right;
+}
 body {    
     background: linear-gradient(rgba(0, 225, 255, 0.26), white);
   }

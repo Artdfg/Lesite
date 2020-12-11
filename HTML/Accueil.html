@@ -9,26 +9,28 @@
 
     <body onload="Onload()">
         <div class="linear-gradient"></div>
-        <h1>Le Site</h1>
+        <h1>Le Site</h1>        
+        <div class="Connec">
+            <button type="button" onclick="self.location.href='../HTML/Connect.html'">Se connecter !</button>
+        </div>
         <div class="ImageB">
              <img src="../images/T2.jpg">
         </div> 
+
         <div id="Text">
         <p>Listes des Destinations :</p>
         <template id="Destinations">
-            <span>
+            <span id="{{id}}">
                 <table style="width:100%">
                     <tr>
-                        <th >{{nom}}</th>
+                        <th>{{nom}}</th>
                         <th>{{pays}}</th>
                         <th colspan="2">{{prix}}</th>
                     </tr>
                     <tr>
                         <td rowspan="2">
                             <img src="{{image}}" width="200" height="154">
-                            <div class="display">
-                                <p class="temp"></p>
-                            </div>
+                            <p id='temp'>{{temp}}</p>
                         </td>
                         <td rowspan="2" colspan="2">{{description}}</td>
                         <td><button type="button" onclick="self.location.href='../HTML/{{lien}}.html'">Réserver</button></td>
@@ -39,20 +41,8 @@
         </template>
         <div id="Tab">
         </div>
-    <!--<h2>La Clusaz</h2>
-        <p><img src="../images/IM1.jpg" width="200" height="154" alt="La Clus'" ></p>
-        <p id="Destinations">
-        </p>
-        <p>A partir de 541€/semaine</p>
-        <h2>Saint Tropez</h2>
-        <p><img src="../images/IM2.jpg" width="200" height="154" alt="St-Trop'" ></p>
-        <p>Le village mythique de Saint-Tropez, rendu célèbre par l'actrice Brigitte Bardot, attire les célébrités et les visiteurs du monde entier. Tranquille et authentique de l'automne au printemps, cet ancien village de pêcheurs se transforme, en été, en une station balnéaire branchée et réputée, avec son port animé où viennent s'amarrer voiliers et yachts luxueux, ses terrasses de cafés, ses boutiques de créateurs ou encore ses boîtes de nuits. Ambiance festive et estivale garantie ! Le port pittoresque, bordé de maisons aux façades colorées, le quartier typique de la Ponche ou encore la place des Lices, tant prisée des boulistes, participent au charme du village. </p>
-        </div>
-    -->
-
         <nav>
             <a href="../HTML/Accueil.html" class="active">Accueil</a>
-            <a href="../HTML/Réservation.html" >Réservation</a>
             <a href="../HTML/Contact.html" >Contact et A propos</a>
         </nav>
     </body>

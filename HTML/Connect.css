@@ -28,13 +28,13 @@ padding: 10px;
 }
 
 body {
-    background-image: url("../images/M4.jpg");
+    background-image: url("../images/LC2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-Boutons {
-    margin-left: 52em;
+nav {
+    margin-bottom: auto;
 }
 
 a {
